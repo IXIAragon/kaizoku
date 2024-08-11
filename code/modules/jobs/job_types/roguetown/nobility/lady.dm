@@ -70,6 +70,9 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+	if(H.dna?.species)
+			if(H.dna.species.id == "human")
+				H.dna.species.soundpack_m = new /datum/voicepack/female/noble()
 
 /datum/job/roguetown/lady/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
