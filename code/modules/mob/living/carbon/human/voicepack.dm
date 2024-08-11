@@ -7,6 +7,8 @@
 		switch(soundin)
 			if("asdf")
 				used = 'sound/blank.ogg'
+			if("laugh")
+				used = pick('sound/vo/female/old/laugh (1).ogg','sound/vo/female/old/laugh (2).ogg','sound/vo/female/old/laugh (3).ogg','sound/vo/female/old/laugh (4).ogg','sound/vo/female/old/laugh (5).ogg','sound/vo/female/old/laugh (6).ogg')
 		return used
 
 /datum/voicepack/proc/getfyoung(soundin)
